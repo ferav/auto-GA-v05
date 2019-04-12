@@ -16,13 +16,4 @@ Feature: registrarEquipo
   |equipo1|excavadoras |
 
 
-  #@ABC
-  #Scenario outline: registrar
-  #  Given 'svService' page is loaded
-  #  And set my credentials on 'Registrar' page
-  #click 'Registrar Maquinaria' tab in 'Header' page
-  #AND fill "<Nombre Maquinaria>" nombre maquinaria campo en 'Formulario Magina'form
 
-   # Examples:
-    #|Nombre Maquinaria|Nombre Maquinaria2|Nombre Maquinaria3|
-    #|Nombre MaquinariaTest|Nombre MaquinariaTest|Nombre MaquinariaTest|

@@ -28,7 +28,7 @@ public class Equipo extends BasePage {
     @FindBy(name = "descripcion")
     private WebElement descripcionInputField;
 
-    @FindBy(xpath = "//input[@name='precio']")
+    @FindBy(name = "precio")
     private WebElement precioInputField;
 
     @FindBy(xpath = "//mat-select[@name='selectCategoriaid']")
@@ -49,28 +49,7 @@ public class Equipo extends BasePage {
 
 
     public void setDatos() {
-      /*  String modeloname = PropertyAccessor.getInstance().getModelo();
-        String marcaname = PropertyAccessor.getInstance().getMarca();
-        String anioname = PropertyAccessor.getInstance().getAnio();
-        String codigoname = PropertyAccessor.getInstance().getCodigo();
-        String descripcionname = PropertyAccessor.getInstance().getDescripcion();
-        String precioname = PropertyAccessor.getInstance().getPrecio();
-        String categorianame = PropertyAccessor.getInstance().getCategoria();
-        String filename = PropertyAccessor.getInstance().getFile();
 
-
-        CommonEvents.setInputField(modeloInputField, modeloname);
-        CommonEvents.setInputField(marcaInputField, marcaname);
-        CommonEvents.setInputField(anioInputField, anioname);
-        CommonEvents.setInputField(codigoInputField, codigoname);
-        CommonEvents.setInputField(descripcionInputField, descripcionname);
-        CommonEvents.setInputField(precioInputField, precioname);
-
-        categoriaSelectField.click();
-        webDriver.findElement(By.xpath("//mat-option/span[contains(.,'" + categorianame + "')]")).click();
-        fileSelectField.sendKeys(filename);
-
-        CommonEvents.clickButton(registrarBtn);*/
     }
     public void setDatos(DataTable dt){
         List<Map<String, String>> list = dt.asMaps(String.class, String.class);
