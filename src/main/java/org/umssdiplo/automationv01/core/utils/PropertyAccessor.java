@@ -8,6 +8,19 @@ import java.util.Properties;
 public class PropertyAccessor {
     private static final String BROWSER = "browser";
     private static final String BASE_URL = "baseurl";
+    private static final String USER_NAME = "username";
+    private static final String PASSWORD = "password";
+    private static final String MODELO_NAME = "modeloname";
+    private static final String MARCA_NAME = "marcaname";
+    private static final String ANIO_NAME = "anioname";
+    private static final String CODIGO_NAME = "codigoname";
+    private static final String DESCRIPCION_NAME = "descripcionname";
+    private static final String PRECIO_NAME = "precioname";
+    private static final String CATEGORIA_NAME = "categorianame";
+    private static final String FILE_NAME = "filename";
+
+
+
 
     private static PropertyAccessor PropertyAccessor;
     private Properties properties;
@@ -56,10 +69,37 @@ public class PropertyAccessor {
     }
 
     public String getUser() {
-        return null;
+        return getDataProperty(USER_NAME);
     }
 
     public String getPassword() {
-        return null;
+        return getDataProperty(PASSWORD);
+    }
+
+    public String getModelo() {
+        return getDataProperty(MODELO_NAME);
+    }
+    public String getMarca() {
+        return getDataProperty(MARCA_NAME);
+    }
+
+    public String getAnio() {
+        return getDataProperty(ANIO_NAME);
+    }
+    public String getCodigo() {
+        return getDataProperty(CODIGO_NAME);
+    }
+    public String getDescripcion() {
+        return getDataProperty(DESCRIPCION_NAME);
+    }
+    public String getPrecio() {
+        return getDataProperty(PRECIO_NAME);
+    }
+
+    public String getCategoria() {
+        return getDataProperty(CATEGORIA_NAME);
+    }
+    public String getFile() {
+        return getDataProperty(FILE_NAME);
     }
 }
