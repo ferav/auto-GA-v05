@@ -2,7 +2,9 @@
 Feature: Login
 
   Scenario: Home page is displayed once set credential in login page
-    Given 'PHP travel' page is loaded
+    Given 'Adidas' page is loaded
+
+
 
 
 

@@ -18,4 +18,6 @@ public class StepsDefinitionPHPtravel {
     public void setMyCredentialsOnLoginPage() throws Throwable {
         login.setCredentials();
     }
+
+
 }
