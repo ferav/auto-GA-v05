@@ -87,6 +87,14 @@ public class CommonEvents {
                 .orElse(null);
     }
 
+    public static void forceWait(int milliseconds){
+        try{
+            Thread.sleep(milliseconds);
+        }catch (Exception e){
+            e.fillInStackTrace();
+        }
+    }
+
     /**
      * This method return the text content of a WebElement.
      *
